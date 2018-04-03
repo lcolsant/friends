@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Show Friends</title>
+</head>
+<body>
+  <h1>Show Friend {{friend['id']}}</h1>
+
+    <fieldset>
+        <p>Full Name: {{ friend['first_name'] }} {{ friend['last_name'] }}</p>
+        <p>Email: {{ friend['email'] }} </p>
+        <p>Created At: {{ friend['created_at'] }} </p>
+    </fieldset> 
+    
+  <a href="/users">Go Back</a>
+  <a href="/friends/{{friend['id']}}/edit">Edit</a>
+  <a href="/friends/{{friend['id']}}/delete">Delete</a>
+
+</body>
+</html>

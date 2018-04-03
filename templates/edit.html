@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Edit User</title>
+</head>
+<body>
+  <h1>Edit User</h1>
+  <form action='/friends/{{friend['id']}}/update' method='POST'>
+  <table>
+    <tr>
+      <th>First Name:</th>
+      <th>Last Name:</th>
+      <th>Email:</th>
+    </tr>
+    <tr>
+      <td><input type="text" name="fname" value={{friend['first_name']}}></td>
+      <td><input type="text" name="lname" value={{friend['last_name']}}></td>
+      <td><input type="text" name="email" value={{friend['email']}}></td>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Edit"></td>
+    </tr>
+  </table>
+  <a href="/users">Go back to users</a>
+
+
+  </form>
+</body>
+</html>
